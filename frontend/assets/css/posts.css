@@ -1,0 +1,281 @@
+/* ===============================
+   USER CREATED BLOG POSTS
+================================ */
+
+#postsContainer {
+    margin-top: 30px;
+}
+
+/* Post card */
+#postsContainer .post-item {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+#postsContainer .post-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Title */
+#postsContainer h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #2a2a2a;
+}
+
+/* Meta info */
+#postsContainer .date {
+    font-size: 13px;
+    color: #888;
+    display: block;
+    margin-bottom: 6px;
+}
+
+#postsContainer small {
+    display: block;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #777;
+}
+
+/* Content */
+#postsContainer p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Category badge */
+#postsContainer .category {
+    display: inline-block;
+    background: #fdecef;
+    color: #8a2f4a;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Action buttons */
+#postsContainer button {
+    border: none;
+    background: #f5f5f5;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: 0.2s;
+}
+
+#postsContainer button:hover {
+    background: #eaeaea;
+}
+
+/* Delete button */
+#postsContainer button:last-child {
+    background: #ffe5e5;
+    color: #b30000;
+}
+
+#postsContainer button:last-child:hover {
+    background: #ffcccc;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #postsContainer .post-item {
+        padding: 18px;
+    }
+
+    #postsContainer h4 {
+        font-size: 18px;
+    }
+}
+#postsContainer img {
+    display: block;
+    margin-bottom: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+/* ====== SECTION WRAP ====== */
+#free-quote.free-quote {
+    padding: 90px 0;
+    background: #f6f7ff;
+}
+
+#free-quote .section-heading {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#free-quote .section-heading h6 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+#free-quote .section-heading h4 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #1f2430;
+    margin-bottom: 12px;
+}
+
+#free-quote .line-dec {
+    width: 60px;
+    height: 4px;
+    border-radius: 999px;
+    margin: 0 auto;
+    background: #6c63ff;
+}
+
+/* ====== FORM CARD ====== */
+#free-quote #createPostForm {
+    background: #fff;
+    border-radius: 22px;
+    padding: 34px;
+    box-shadow: 0 20px 60px rgba(20, 25, 50, 0.10);
+    border: 1px solid rgba(108, 99, 255, 0.10);
+}
+
+/* IMPORTANT: force block layout + same sizing */
+#free-quote #createPostForm * {
+    box-sizing: border-box;
+}
+
+#free-quote #createPostForm input[type="text"],
+#free-quote #createPostForm textarea,
+#free-quote #createPostForm input[type="file"],
+#free-quote #createPostForm button {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* ====== INPUTS ====== */
+#free-quote #createPostForm input[type="text"],
+#free-quote #createPostForm textarea {
+    border: 1px solid #e7e9f5 !important;
+    background: #fbfbff;
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 15px;
+    color: #1f2430;
+    transition: 0.2s ease;
+    outline: none;
+    margin: 0 0 16px 0 !important;
+}
+
+/* Make textarea normal size */
+#free-quote #createPostForm textarea {
+    min-height: 180px;
+    resize: vertical;
+    line-height: 1.4;
+}
+
+/* Focus glow */
+#free-quote #createPostForm input[type="text"]:focus,
+#free-quote #createPostForm textarea:focus {
+    border-color: #6c63ff !important;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.14);
+}
+
+/* ====== FILE INPUT (modern) ====== */
+#free-quote #createPostForm input[type="file"] {
+    border: 1px dashed #d8dcf5 !important;
+    background: #fbfbff;
+    border-radius: 14px;
+    padding: 12px;
+    margin: 0 0 18px 0 !important;
+    color: #4a4f63;
+    cursor: pointer;
+}
+
+/* Chrome/Edge/Safari */
+#free-quote #createPostForm input[type="file"]::file-selector-button {
+    border: none;
+    background: #6c63ff;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+#free-quote #createPostForm input[type="file"]::file-selector-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.25);
+}
+
+/* ====== BUTTON ====== */
+#free-quote #createPostForm button[type="submit"] {
+    border: none !important;
+    border-radius: 16px !important;
+    padding: 14px 18px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    background: linear-gradient(135deg, #6c63ff, #8a84ff) !important;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#free-quote #createPostForm button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 35px rgba(108, 99, 255, 0.30);
+}
+
+#free-quote #createPostForm button[type="submit"]:active {
+    transform: translateY(0px) scale(0.99);
+}
+
+/* ====== MOBILE ====== */
+@media (max-width: 768px) {
+    #free-quote #createPostForm {
+        padding: 22px;
+        border-radius: 18px;
+    }
+
+    #free-quote .section-heading h4 {
+        font-size: 24px;
+    }
+}
+/* ===== FIX: file input alignment ===== */
+#free-quote #createPostForm input[type="file"]{
+    padding: 10px 12px !important;     /* чуть меньше верх/низ */
+    line-height: 1.2 !important;
+    overflow: hidden;                  /* чтобы ничего не "вылезало" */
+}
+
+#free-quote #createPostForm input[type="file"]::file-selector-button{
+    margin: 0 12px 0 0 !important;     /* убираем возможный верхний отступ */
+    padding: 10px 14px !important;
+    line-height: 1 !important;
+    vertical-align: middle;
+    transform: none !important;        /* убираем сдвиг */
+}
+
+/* hover без сдвига */
+#free-quote #createPostForm input[type="file"]::file-selector-button:hover{
+    transform: none !important;
+    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.25);
+}
+
+/* Ограничиваем ширину пользовательских постов */
+#postsContainer {
+    max-width: 900px;   /* попробуй 800–1000 */
+    margin: 0 auto;     /* центр */
+}
+
